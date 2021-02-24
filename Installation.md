@@ -536,7 +536,7 @@ Login with your user and follow the next steps.
 ### Window Manager
 Now We're gonna install the Window Manager.
 
-I'll show the steps to install [Gnome](https://www.gnome.org/).
+#### Steps to install [Gnome](https://www.gnome.org/).
 
 First of all, run the installation command with `pacman`:
 ```sh
@@ -546,6 +546,34 @@ $ sudo pacman -S gnome gnome-extra
 When the installation finishes, enable `gdm` to be started with system on boot:
 ```sh
 $ sudo systemctl enable gdm.service
+```
+#### Steps to install [KDE](https://kde.org/).
+
+First of all, run the installation command with `pacman`:
+```sh
+$ sudo pacman -S plasma 
+```
+Or for a minimal instalation:
+
+```sh
+$ sudo pacman -S plasma-desktop 
+```
+And install the login session screen (sddm):
+
+```sh
+$ sudo pacman -S sddm 
+```
+
+When the installation finishes, enable `sddm` to be started with system on boot:
+
+```sh
+$ sudo systemctl enable sddm
+```
+
+#### Steps to install [DWM](https://dwm.suckless.org/). NOT FINISHED!!!
+
+```sh
+$ sudo pacman -S dwm
 ```
 
 ### Network Manager and services
@@ -627,6 +655,7 @@ To auto switch to A2DP mode:
     ```
 1. Reboot PC to apply changes
 
+    ``` reboot ```
 
 ## References
 - https://wiki.archlinux.org/index.php/installation_guide
