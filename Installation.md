@@ -324,9 +324,9 @@ Now, we'll change root into the new system
 Open the file `/etc/locale.gen` and uncomment your locale settings
 
 After that, write your locale string to file `/etc/locale.conf`.
-For example, if you've uncomment the line `en_GK.UTF-8 UTF-8`, now you will write `en_GK.UTF-8`
+For example, if you've uncomment the line `en_US.UTF-8 UTF-8`, now you will write `es_ES.UTF-8`
 ```sh
-echo en_GK.UTF-8 > /etc/locale.conf
+echo en_ES.UTF-8 > /etc/locale.conf
 ```
 
 Then, generate locale settings by running:
